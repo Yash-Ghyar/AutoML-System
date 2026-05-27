@@ -1,228 +1,236 @@
-🤖 AutoML Machine Learning Dashboard
-Train • Test • Predict — Automatically (Flask + Scikit-Learn + Render)
+# 🤖 AutoML-Based Multivariate Analysis System  
+### Train • Test • Predict — Automatically (Flask + Scikit-Learn)
+
+🚀 **Live Demo:** [Paste Your Render Deployment Link]
+
+A production-style **AutoML web application** that automatically preprocesses datasets, detects the machine learning task, trains multiple algorithms, selects the best-performing model, and generates predictions through an interactive web interface.
+
+Upload a CSV → Train → Evaluate → Test → Predict
+
+---
+
+## 🚀 Live Features
+
+✅ Upload Any CSV Dataset  
+✅ Automatic Target Column Detection  
+✅ Automatic ML Task Detection (Classification / Regression)  
+✅ Automatic Data Preprocessing Pipeline  
+✅ Missing Value Handling  
+✅ Feature Scaling & Encoding  
+✅ Multi-Model Training & Evaluation  
+✅ Automatic Best Model Selection  
+✅ Model Persistence using Joblib  
+✅ Dataset Testing Support  
+✅ Real-Time Predictions  
+✅ JSON API Support  
+✅ Responsive Flask Web Interface  
+✅ Deployed on Render  
+
+---
+
+## 🧠 Machine Learning Workflow
+
+```text
+Upload Dataset
+      ↓
+Target Detection
+      ↓
+Task Detection
+(Classification / Regression)
+      ↓
+Preprocessing
+(Missing Values + Encoding + Scaling)
+      ↓
+Train Multiple Models
+      ↓
+Performance Evaluation
+      ↓
+Best Model Selection
+      ↓
+Model Saving
+      ↓
+Prediction
+```
+
+---
+
+# 🛠 Tech Stack
+
+### Backend
+- Python
+- Flask
+
+### Machine Learning
+- Scikit-Learn
+- Pandas
+- NumPy
+- Joblib
+
+### Frontend
+- HTML
+- CSS
+- Bootstrap
+
+### Deployment
+- Render
+
+---
+
+# ⚙️ Supported Models
+
+## Classification
+- Random Forest Classifier
+- Logistic Regression
+- Support Vector Machine (SVM)
+- Decision Tree Classifier
+- K-Nearest Neighbors (KNN)
+- Gradient Boosting Classifier
+
+## Regression
+- Random Forest Regressor
+- Linear Regression
+- Ridge Regression
+- Decision Tree Regressor
+- K-Nearest Neighbors (KNN)
+- Gradient Boosting Regressor
+- Support Vector Regressor (SVR)
+
+---
+
+# 📊 Performance Metrics
+
+### Classification
+- Accuracy Score
 
-A powerful, production-ready AutoML web application that automatically handles:
+### Regression
+- R² Score
 
-ML task detection (Classification / Regression)
+The application automatically selects the highest-performing model.
 
-Data preprocessing
+---
 
-Model training
+# 📂 Project Structure
 
-Model testing
+```bash
+AutoML-Based-Multivariate-Analysis-System/
+│
+├── app.py
+├── requirements.txt
+├── models/
+│   └── best_model.pkl
+├── uploads/
+├── templates/
+│   ├── index.html
+│   └── result.html
+├── static/
+└── README.md
+```
 
-Real-time predictions
+---
 
-JSON API response
+# 💻 Installation
 
-Upload ANY CSV → The system figures out the rest.
+Clone Repository
 
-🧠 Tech Stack
+```bash
+git clone https://github.com/YOUR_USERNAME/AutoML-Based-Multivariate-Analysis-System.git
+```
 
-Frontend: HTML, CSS, Bootstrap (Glassmorphism UI)
-=======
-🤖 AutoML-Based Multivariate Analysis System
+Move to Project
 
-An advanced Flask-based Machine Learning application that automatically preprocesses data, analyzes multivariate relationships, trains multiple ML models, and selects the best-performing algorithm — all through a clean, responsive Bootstrap interface.
+```bash
+cd AutoML-Based-Multivariate-Analysis-System
+```
 
-📊 The system performs end-to-end ML automation, including missing value handling, outlier removal, encoding, scaling, model evaluation, multivariate analysis (PCA, VIF, Correlation), and real-time predictions.
+Install Dependencies
 
-🧠 Tech Stack
-
-Frontend:
-• HTML
-• CSS
-• Bootstrap (No JavaScript)
->>>>>>> 514d4e28b53b133ef376ac4f06063e24ed89f009
-
-Backend:
-• Flask (Python)
-
-<<<<<<< HEAD
-Machine Learning: Scikit-Learn, Pandas, NumPy
-
-Deployment: Render
-
-Model Storage: Joblib
-
-🚀 Features
-🔹 Auto Task Detection
-
-System automatically decides whether dataset is:
-
-Classification (e.g., Purchased, Churn, Label)
-
-Regression (e.g., Salary, Charges, Price)
-
-No user input needed — it's fully automated.
-=======
-Machine Learning:
-• Scikit-learn
-• Pandas
-• NumPy
-• Statsmodels
-• Matplotlib
-• Seaborn
-
-🚀 Features
-🔹 Automatic Target Detection
-
-System intelligently identifies the target column — no manual input required.
-
-🔹 Automatic ML Task Identification
-
-Detects whether the dataset is for:
-✔ Classification
-✔ Regression
-
-🔹 Complete Data Preprocessing
-
-Handles all essential preprocessing steps:
-• Missing value treatment (Median/Mode)
-• Outlier removal using IQR
-• Encoding categorical variables
-• Scaling numeric features
-
-🔹 AutoML Best Model Selection
-
-Trains multiple ML models and automatically selects the one with the highest accuracy (classification) or R² score (regression).
-
-🔹 Multivariate Analysis
-
-Generates professional statistical insights:
-📊 Correlation Heatmap
-🧩 PCA (Dimensionality Reduction)
-📈 VIF (Multicollinearity Detection)
-
-🔹 Interactive Prediction Engine
-
-Enter values in key=value format → get real-time predictions instantly.
-
-🔹 Modern Bootstrap UI
-
-Clean, elegant, responsive — perfect for presentations and industry demos.
->>>>>>> 514d4e28b53b133ef376ac4f06063e24ed89f009
-
-🔹 Automated Preprocessing
-
-<<<<<<< HEAD
-Missing value handling
-
-Outlier removal (IQR)
-
-Standard Scaling
-
-One-Hot Encoding
-
-Column alignment for predictions
-
-🔹 AutoML Model Training
-
-Trains 10+ ML models and selects the best performing model automatically.
-
-🔹 Testing Module
-
-Upload test CSV → Get
-
-Accuracy (classification)
-
-R² Score (regression)
-
-🔹 Prediction Module
-
-Supports:
-
-UI Prediction (key=value input)
-
-JSON API Prediction
-
-🔹 Modern UI + Cloud Deployment
-
-Glass UI
-
-Responsive design
-
-Fast & lightweight
-
-Fully deployed on Render
-
-🌐 Live Demo
-
-🔗 Add your Render link here
-
-📦 Installation
-git clone https://github.com/YOUR_USERNAME/AutoML-Dashboard.git
-cd AutoML-Dashboard
-
-python -m venv automl
-automl\Scripts\activate       # Windows
-# source automl/bin/activate  # Mac/Linux
-
-=======
-1️⃣ Upload your dataset (CSV)
-2️⃣ System preprocesses the data automatically
-3️⃣ Multiple ML models are trained
-4️⃣ Best model is selected and saved
-5️⃣ Multivariate analysis visualizations are generated
-6️⃣ You can input values to get real-time predictions
-
-📦 Installation
-git clone https://github.com/Yash-Ghyar/Flask-AutoML-Multivariate-Analysis.git
-cd Flask-AutoML-Multivariate-Analysis
->>>>>>> 514d4e28b53b133ef376ac4f06063e24ed89f009
+```bash
 pip install -r requirements.txt
+```
+
+Run Application
+
+```bash
 python app.py
+```
 
-🖼 Usage
-1️⃣ Train a Model
+Open Browser
 
-Upload training CSV
+```text
+http://127.0.0.1:5000
+```
 
-App auto-detects:
+---
 
-Target column
+# 📌 Usage
 
-Task type (classification/regression)
+### Step 1
+Upload CSV Dataset
 
-Data types
+### Step 2
+System Automatically:
+- Detects Target Column
+- Detects ML Task
+- Trains Multiple Models
 
-Trains multiple models
+### Step 3
+View:
+- Best Model
+- Performance Score
 
-Picks the best one
+### Step 4
+Upload Test Dataset or Predict Manually
 
-2️⃣ Test the Model
+---
 
-Upload test CSV → Get Accuracy / R².
+# 🔌 API Example
 
-3️⃣ Predict via UI
-Age=35
-EstimatedSalary=60000
+### Endpoint
 
-4️⃣ Predict via JSON API
+```http
+POST /predict_json
+```
 
-POST → /predict_json
+### Request
 
-{ "Age": 35, "EstimatedSalary": 60000 }
+```json
+{
+  "age": 22,
+  "salary": 55000,
+  "experience": 2
+}
+```
 
+### Response
 
-Response:
+```json
+{
+  "prediction": "Accepted"
+}
+```
 
-{ "prediction": "1" }
+---
 
-⚡ Highlights
+# 🌟 Project Highlights
 
-Fully automated AutoML pipeline
+- End-to-End Machine Learning Workflow
+- Automated Model Selection
+- Production-Oriented Flask Architecture
+- Interactive Web Interface
+- REST API Integration
+- Cloud Deployment on Render
 
-Smart task detection (classification/regression)
+---
 
-Trains & compares 10+ machine learning models
+# 👨‍💻 Author
 
-Automatic preprocessing (no manual work)
+**Yash Ghyar**  
+Artificial Intelligence & Data Science  
+Vishwakarma Institute of Technology (VIIT), Pune
 
-UI input + JSON API support
+GitHub:  
+https://github.com/Yash-Ghyar
 
-Clean and responsive Bootstrap interface
+---
 
-Works on ANY dataset (generic ML system)
-
-Deployed online using Render
+⭐ If you found this project interesting, consider giving it a star.
