@@ -1,4 +1,4 @@
-# 🤖 AutoML-Based Multivariate Analysis System
+# 🤖 AutoML-System
 
 ### Train • Test • Predict — Automatically (Flask + Scikit-Learn)
 
@@ -224,40 +224,6 @@ View:
 ## Step 4
 
 Upload Test Dataset or Predict Manually
-
----
-
-# 🔌 API Example
-
-## Endpoint
-
-```bash
-POST /predict_json
-```
-
----
-
-## Request
-
-```json
-{
-  "age": 22,
-  "salary": 55000,
-  "experience": 2
-}
-```
-
----
-
-## Response
-
-```json
-{
-  "prediction": "Accepted"
-}
-```
-
----
 
 # 🌟 Project Highlights
 
