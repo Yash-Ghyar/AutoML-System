@@ -1,34 +1,39 @@
-# 🤖 AutoML-Based Multivariate Analysis System  
+# 🤖 AutoML-Based Multivariate Analysis System
+
 ### Train • Test • Predict — Automatically (Flask + Scikit-Learn)
 
 🚀 **Live Demo:** [Paste Your Render Deployment Link]
 
-A production-style **AutoML web application** that automatically preprocesses datasets, detects the machine learning task, trains multiple algorithms, selects the best-performing model, and generates predictions through an interactive web interface.
+---
+
+## 📌 Overview
+
+A production-style AutoML web application that automatically preprocesses datasets, detects the machine learning task, trains multiple algorithms, selects the best-performing model, and generates predictions through an interactive web interface.
 
 Upload a CSV → Train → Evaluate → Test → Predict
 
 ---
 
-## 🚀 Live Features
+# 🚀 Live Features
 
-✅ Upload Any CSV Dataset  
-✅ Automatic Target Column Detection  
-✅ Automatic ML Task Detection (Classification / Regression)  
-✅ Automatic Data Preprocessing Pipeline  
-✅ Missing Value Handling  
-✅ Feature Scaling & Encoding  
-✅ Multi-Model Training & Evaluation  
-✅ Automatic Best Model Selection  
-✅ Model Persistence using Joblib  
-✅ Dataset Testing Support  
-✅ Real-Time Predictions  
-✅ JSON API Support  
-✅ Responsive Flask Web Interface  
-✅ Deployed on Render  
+✅ Upload Any CSV Dataset
+✅ Automatic Target Column Detection
+✅ Automatic ML Task Detection (Classification / Regression)
+✅ Automatic Data Preprocessing Pipeline
+✅ Missing Value Handling
+✅ Feature Scaling & Encoding
+✅ Multi-Model Training & Evaluation
+✅ Automatic Best Model Selection
+✅ Model Persistence using Joblib
+✅ Dataset Testing Support
+✅ Real-Time Predictions
+✅ JSON API Support
+✅ Responsive Flask Web Interface
+✅ Deployed on Render
 
 ---
 
-## 🧠 Machine Learning Workflow
+# 🧠 Machine Learning Workflow
 
 ```text
 Upload Dataset
@@ -56,54 +61,64 @@ Prediction
 
 # 🛠 Tech Stack
 
-### Backend
-- Python
-- Flask
+## 🔹 Backend
 
-### Machine Learning
-- Scikit-Learn
-- Pandas
-- NumPy
-- Joblib
+* Python
+* Flask
 
-### Frontend
-- HTML
-- CSS
-- Bootstrap
+## 🔹 Machine Learning
 
-### Deployment
-- Render
+* Scikit-Learn
+* Pandas
+* NumPy
+* Joblib
+
+## 🔹 Frontend
+
+* HTML
+* CSS
+* Bootstrap
+
+## 🔹 Deployment
+
+* Render
 
 ---
 
 # ⚙️ Supported Models
 
-## Classification
-- Random Forest Classifier
-- Logistic Regression
-- Support Vector Machine (SVM)
-- Decision Tree Classifier
-- K-Nearest Neighbors (KNN)
-- Gradient Boosting Classifier
+## 📌 Classification Models
 
-## Regression
-- Random Forest Regressor
-- Linear Regression
-- Ridge Regression
-- Decision Tree Regressor
-- K-Nearest Neighbors (KNN)
-- Gradient Boosting Regressor
-- Support Vector Regressor (SVR)
+* Random Forest Classifier
+* Logistic Regression
+* Support Vector Machine (SVM)
+* Decision Tree Classifier
+* K-Nearest Neighbors (KNN)
+* Gradient Boosting Classifier
+
+---
+
+## 📌 Regression Models
+
+* Random Forest Regressor
+* Linear Regression
+* Ridge Regression
+* Decision Tree Regressor
+* K-Nearest Neighbors Regressor
+* Gradient Boosting Regressor
+* Support Vector Regressor (SVR)
 
 ---
 
 # 📊 Performance Metrics
 
-### Classification
-- Accuracy Score
+## 🔹 Classification
 
-### Regression
-- R² Score
+* Accuracy Score
+
+## 🔹 Regression
+
+* R² Score
 
 The application automatically selects the highest-performing model.
 
@@ -116,47 +131,62 @@ AutoML-Based-Multivariate-Analysis-System/
 │
 ├── app.py
 ├── requirements.txt
+├── runtime.txt
+├── README.md
+│
 ├── models/
 │   └── best_model.pkl
+│
 ├── uploads/
+│
 ├── templates/
 │   ├── index.html
 │   └── result.html
+│
 ├── static/
-└── README.md
+│
+└── screenshots/
 ```
 
 ---
 
 # 💻 Installation
 
-Clone Repository
+## Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AutoML-Based-Multivariate-Analysis-System.git
+git clone https://github.com/Yash-Ghyar/AutoML-Based-Multivariate-Analysis-System.git
 ```
 
-Move to Project
+---
+
+## Move to Project Directory
 
 ```bash
 cd AutoML-Based-Multivariate-Analysis-System
 ```
 
-Install Dependencies
+---
+
+## Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run Application
+---
+
+## Run Application
 
 ```bash
 python app.py
 ```
 
-Open Browser
+---
 
-```text
+## Open Browser
+
+```bash
 http://127.0.0.1:5000
 ```
 
@@ -164,34 +194,50 @@ http://127.0.0.1:5000
 
 # 📌 Usage
 
-### Step 1
+## Step 1
+
 Upload CSV Dataset
 
-### Step 2
+---
+
+## Step 2
+
 System Automatically:
-- Detects Target Column
-- Detects ML Task
-- Trains Multiple Models
 
-### Step 3
+* Detects Target Column
+* Detects ML Task
+* Trains Multiple Models
+* Selects Best Model
+
+---
+
+## Step 3
+
 View:
-- Best Model
-- Performance Score
 
-### Step 4
+* Best Model
+* Performance Score
+* Task Type
+
+---
+
+## Step 4
+
 Upload Test Dataset or Predict Manually
 
 ---
 
 # 🔌 API Example
 
-### Endpoint
+## Endpoint
 
-```http
+```bash
 POST /predict_json
 ```
 
-### Request
+---
+
+## Request
 
 ```json
 {
@@ -201,7 +247,9 @@ POST /predict_json
 }
 ```
 
-### Response
+---
+
+## Response
 
 ```json
 {
@@ -213,24 +261,46 @@ POST /predict_json
 
 # 🌟 Project Highlights
 
-- End-to-End Machine Learning Workflow
-- Automated Model Selection
-- Production-Oriented Flask Architecture
-- Interactive Web Interface
-- REST API Integration
-- Cloud Deployment on Render
+✅ End-to-End Machine Learning Workflow
+✅ Automated Model Selection
+✅ Production-Oriented Flask Architecture
+✅ Interactive Web Interface
+✅ REST API Integration
+✅ Cloud Deployment on Render
+✅ Industry-Level ML Pipeline
+✅ Resume-Ready Full Stack AI Project
+
+---
+
+# 📈 Future Improvements
+
+* Hyperparameter Tuning using GridSearchCV
+* Cross Validation
+* Feature Importance Visualization
+* Docker Support
+* Streamlit Dashboard
+* Database Integration
+* Authentication System
 
 ---
 
 # 👨‍💻 Author
 
-**Yash Ghyar**  
-Artificial Intelligence & Data Science  
-Vishwakarma Institute of Technology (VIIT), Pune
+## Yash Ghyar
 
-GitHub:  
-https://github.com/Yash-Ghyar
+🎓 Artificial Intelligence & Data Science
+🏫 Vishwakarma Institute of Information Technology (VIIT), Pune
 
 ---
 
-⭐ If you found this project interesting, consider giving it a star.
+# 🔗 Connect With Me
+
+## GitHub
+
+https://github.com/Yash-Ghyar
+
+## LinkedIn
+
+Paste Your LinkedIn URL
+
+---
