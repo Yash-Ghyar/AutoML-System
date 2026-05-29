@@ -267,6 +267,4 @@ https://github.com/Yash-Ghyar
 
 ## LinkedIn
 
-Paste Your LinkedIn URL
-
 linkedin.com/in/yash-ghyar-94b58825b
