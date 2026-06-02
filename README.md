@@ -1,132 +1,142 @@
-# 🤖 AutoML-System
+# AutoML System
+### Train • Test • Predict Automatically (Flask + Scikit-Learn)
 
-### Train • Test • Predict — Automatically (Flask + Scikit-Learn)
-
-🚀 **Live Demo:** [https://automl-system-5.onrender.com]
-
----
-
-## 📌 Overview
-
-A production-style AutoML web application that automatically preprocesses datasets, detects the machine learning task, trains multiple algorithms, selects the best-performing model, and generates predictions through an interactive web interface.
-
-Upload a CSV → Train → Evaluate → Test → Predict
+**Live Demo:** https://automl-system-5.onrender.com
 
 ---
 
-# 🚀 Live Features
+## Overview
 
-✅ Upload Any CSV Dataset
-✅ Automatic Target Column Detection
-✅ Automatic ML Task Detection (Classification / Regression)
-✅ Automatic Data Preprocessing Pipeline
-✅ Missing Value Handling
-✅ Feature Scaling & Encoding
-✅ Multi-Model Training & Evaluation
-✅ Automatic Best Model Selection
-✅ Model Persistence using Joblib
-✅ Dataset Testing Support
-✅ Real-Time Predictions
-✅ JSON API Support
-✅ Responsive Flask Web Interface
-✅ Deployed on Render
+A production-oriented AutoML web application that automatically preprocesses datasets, detects the machine learning task, trains multiple algorithms, selects the best-performing model, and generates predictions through an interactive web interface.
+
+**Workflow:** Upload CSV → Train → Evaluate → Test → Predict
 
 ---
 
-# 🧠 Machine Learning Workflow
+## Features
 
-```text
+- Upload Any CSV Dataset
+- Automatic Target Column Detection
+- Automatic Machine Learning Task Detection (Classification / Regression)
+- Automated Data Preprocessing Pipeline
+- Missing Value Handling
+- Feature Scaling and Encoding
+- Multi-Model Training and Evaluation
+- Automatic Best Model Selection
+- Model Persistence using Joblib
+- Dataset Testing Support
+- Real-Time Predictions
+- JSON API Support
+- Responsive Flask Web Interface
+- Cloud Deployment on Render
+
+---
+
+## Machine Learning Workflow
+
 Upload Dataset
-      ↓
+
+↓
+
 Target Detection
-      ↓
-Task Detection
-(Classification / Regression)
-      ↓
-Preprocessing
+
+↓
+
+Task Detection (Classification / Regression)
+
+↓
+
+Data Preprocessing
+
 (Missing Values + Encoding + Scaling)
-      ↓
+
+↓
+
 Train Multiple Models
-      ↓
+
+↓
+
 Performance Evaluation
-      ↓
+
+↓
+
 Best Model Selection
-      ↓
+
+↓
+
 Model Saving
-      ↓
-Prediction
-```
+
+↓
+
+Prediction Generation
 
 ---
 
-# 🛠 Tech Stack
+## Technology Stack
 
-## 🔹 Backend
+### Backend
 
-* Python
-* Flask
+- Python
+- Flask
 
-## 🔹 Machine Learning
+### Machine Learning
 
-* Scikit-Learn
-* Pandas
-* NumPy
-* Joblib
+- Scikit-Learn
+- Pandas
+- NumPy
+- Joblib
 
-## 🔹 Frontend
+### Frontend
 
-* HTML
-* CSS
-* Bootstrap
+- HTML5
+- CSS3
+- Bootstrap
 
-## 🔹 Deployment
+### Deployment
 
-* Render
-
----
-
-# ⚙️ Supported Models
-
-## 📌 Classification Models
-
-* Random Forest Classifier
-* Logistic Regression
-* Support Vector Machine (SVM)
-* Decision Tree Classifier
-* K-Nearest Neighbors (KNN)
-* Gradient Boosting Classifier
+- Render
 
 ---
 
-## 📌 Regression Models
+## Supported Models
 
-* Random Forest Regressor
-* Linear Regression
-* Ridge Regression
-* Decision Tree Regressor
-* K-Nearest Neighbors Regressor
-* Gradient Boosting Regressor
-* Support Vector Regressor (SVR)
+### Classification Models
 
----
+- Random Forest Classifier
+- Logistic Regression
+- Support Vector Machine (SVM)
+- Decision Tree Classifier
+- K-Nearest Neighbors (KNN)
+- Gradient Boosting Classifier
 
-# 📊 Performance Metrics
+### Regression Models
 
-## 🔹 Classification
-
-* Accuracy Score
-
-## 🔹 Regression
-
-* R² Score
-
-The application automatically selects the highest-performing model.
+- Random Forest Regressor
+- Linear Regression
+- Ridge Regression
+- Decision Tree Regressor
+- K-Nearest Neighbors Regressor
+- Gradient Boosting Regressor
+- Support Vector Regressor (SVR)
 
 ---
 
-# 📂 Project Structure
+## Performance Metrics
 
-```bash
+### Classification
+
+- Accuracy Score
+
+### Regression
+
+- R² Score
+
+The system automatically selects the highest-performing model based on evaluation metrics.
+
+---
+
+## Project Structure
+
 AutoML-Based-Multivariate-Analysis-System/
 │
 ├── app.py
@@ -135,136 +145,112 @@ AutoML-Based-Multivariate-Analysis-System/
 ├── README.md
 │
 ├── models/
-│   └── best_model.pkl
+│ └── best_model.pkl
 │
 ├── uploads/
 │
 ├── templates/
-│   ├── index.html
-│   └── result.html
+│ ├── index.html
+│ └── result.html
 │
-├── static/
-│
-└── screenshots/
-```
+└── static/
 
 ---
 
-# 💻 Installation
+## Installation
 
-## Clone Repository
+### Clone Repository
 
-```bash
 git clone https://github.com/Yash-Ghyar/AutoML-Based-Multivariate-Analysis-System.git
-```
 
----
+### Navigate to Project Directory
 
-## Move to Project Directory
-
-```bash
 cd AutoML-Based-Multivariate-Analysis-System
-```
 
----
+### Install Dependencies
 
-## Install Dependencies
-
-```bash
 pip install -r requirements.txt
-```
 
----
+### Run Application
 
-## Run Application
-
-```bash
 python app.py
-```
 
----
+### Open Browser
 
-## Open Browser
-
-```bash
 http://127.0.0.1:5000
-```
 
 ---
 
-# 📌 Usage
+## Usage
 
-## Step 1
+### Step 1
 
-Upload CSV Dataset
+Upload a CSV dataset.
 
----
+### Step 2
 
-## Step 2
+The system automatically:
 
-System Automatically:
+- Detects the target column
+- Identifies the machine learning task
+- Trains multiple models
+- Selects the best-performing model
 
-* Detects Target Column
-* Detects ML Task
-* Trains Multiple Models
-* Selects Best Model
-
----
-
-## Step 3
+### Step 3
 
 View:
 
-* Best Model
-* Performance Score
-* Task Type
+- Best Model
+- Performance Score
+- Task Type
+
+### Step 4
+
+Upload a test dataset or perform manual predictions.
 
 ---
 
-## Step 4
+## Project Highlights
 
-Upload Test Dataset or Predict Manually
-
-# 🌟 Project Highlights
-
-✅ End-to-End Machine Learning Workflow
-✅ Automated Model Selection
-✅ Production-Oriented Flask Architecture
-✅ Interactive Web Interface
-✅ REST API Integration
-✅ Cloud Deployment on Render
-✅ Industry-Level ML Pipeline
-✅ Resume-Ready Full Stack AI Project
+- End-to-End Machine Learning Workflow
+- Automated Model Selection
+- Production-Oriented Flask Architecture
+- Interactive Web Interface
+- REST API Integration
+- Cloud Deployment on Render
+- Industry-Style ML Pipeline
+- Resume-Ready AI Project
 
 ---
 
-# 📈 Future Improvements
+## Future Improvements
 
-* Hyperparameter Tuning using GridSearchCV
-* Cross Validation
-* Feature Importance Visualization
-* Docker Support
-* Streamlit Dashboard
-* Database Integration
-* Authentication System
-
----
-
-# 👨‍💻 Author
-
-## Yash Ghyar
-
-🎓 Artificial Intelligence & Data Science
-🏫 Vishwakarma Institute of Information Technology (VIIT), Pune
+- Hyperparameter Tuning using GridSearchCV
+- Cross Validation
+- Feature Importance Visualization
+- Docker Support
+- Streamlit Dashboard
+- Database Integration
+- Authentication System
 
 ---
 
-# 🔗 Connect With Me
+## Author
 
-## GitHub
+**Yash Ghyar**
+
+B.Tech – Artificial Intelligence & Data Science
+
+Vishwakarma Institute of Information Technology (VIIT), Pune
+
+---
+
+## Connect With Me
+
+**GitHub**
 
 https://github.com/Yash-Ghyar
 
-## LinkedIn
+**LinkedIn**
 
-linkedin.com/in/yash-ghyar-94b58825b
+https://linkedin.com/in/yash-ghyar-94b58825b
