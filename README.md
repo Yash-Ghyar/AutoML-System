@@ -137,6 +137,7 @@ The system automatically selects the highest-performing model based on evaluatio
 
 ## Project Structure
 
+```text
 AutoML-Based-Multivariate-Analysis-System/
 │
 ├── app.py
@@ -145,17 +146,16 @@ AutoML-Based-Multivariate-Analysis-System/
 ├── README.md
 │
 ├── models/
-│ └── best_model.pkl
+│   └── best_model.pkl
 │
 ├── uploads/
 │
 ├── templates/
-│ ├── index.html
-│ └── result.html
+│   ├── index.html
+│   └── result.html
 │
 └── static/
-
----
+```
 
 ## Installation
 
